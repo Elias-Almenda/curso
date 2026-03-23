@@ -41,6 +41,6 @@ Python 3
 Alguns códigos podem parecer simples — e isso é intencional. Este repositório é focado no aprendizado e na prática constante.
 
 📬 Contato
-GitHub: https://github.com/Eliashda
-GitHub (projetos pessoais): https://github.com/Elias-Almenda
+GitHub: https://github.com/Elias-Almenda
+GitHub (projetos pessoais): https://github.com/Eliashda
 Email: eliasalmenda64@gmail.com
