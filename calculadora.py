@@ -6,7 +6,7 @@ while True:
   print("\n1. somar\n2. multiplicar\n3. subtrair\n4. divisão\n5. potencia \n6. raiz\n7. sair")
   choice = input("Escolha: ")
   if choice == '7':
-        print("Saindo...")
+        print("Saindo.")
         break
 
   elif choice == '6':
