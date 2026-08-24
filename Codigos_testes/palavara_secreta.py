@@ -41,10 +41,8 @@ while True:
     print(tentativas)
     print("Palavra formada: ", palavra_formada)        
     if palavra_formada == palavra_secreta:
-        os.system('cls')
         print("VOCÊ GANHOU!!!!")
         print("A Palavra era", palavra_secreta)
         print("Tentativas", tentativas)
         letras_certas = ""
         tentativas = 0
-    
