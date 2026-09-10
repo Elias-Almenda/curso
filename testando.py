@@ -234,35 +234,93 @@
 
 
 
-alunos = [
-     ["Elias", 8.5],
-     ["João", 6.0],
-     ["Ana", 7.0],
-     ["Carlos", 4.0],
-     ["Nick", 9.5]
-     ]
+# alunos = [
+#      ["Elias", 8.5],
+#      ["João", 6.0],
+#      ["Ana", 7.0],
+#      ["Carlos", 4.0],
+#      ["Nick", 9.5]
+#      ]
 
-soma = 0
-maior_nota = alunos[0][1]
-menor_nota = alunos [0][1]
-aluno_maior = alunos [0][0]
-aluno_menor = alunos [0][0]
-for indice, nome in enumerate(alunos, start = 1):
-         soma += nome[1] 
-         print(f'{indice} - {nome[0]}: {nome[1]}')
+# soma = 0
+# maior_nota = alunos[0][1]
+# menor_nota = alunos [0][1]
+# aluno_maior = alunos [0][0]
+# aluno_menor = alunos [0][0]
+# for indice, nome in enumerate(alunos, start = 1):
+#          soma += nome[1] 
+#          print(f'{indice} - {nome[0]}: {nome[1]}')
          
-         if nome[1] > maior_nota:
-             maior_nota = nome[1]
-             aluno_maior = nome[0]
-         if nome[1] < menor_nota:
-             menor_nota = nome[1]
-             aluno_menor = nome[0]
+#          if nome[1] > maior_nota:
+#              maior_nota = nome[1]
+#              aluno_maior = nome[0]
+#          if nome[1] < menor_nota:
+#              menor_nota = nome[1]
+#              aluno_menor = nome[0]
 
-media = soma / len(alunos)
+# media = soma / len(alunos)
 
-print(f'A media da turma: {media}')
-print(f'Maior nota: {aluno_maior} - {maior_nota}\nMenor nota: {aluno_menor} - {menor_nota}')
-
-
+# print(f'A media da turma: {media}')
+# print(f'Maior nota: {aluno_maior} - {maior_nota}\nMenor nota: {aluno_menor} - {menor_nota}')
 
 
+
+
+
+
+
+# print("Bem vindo a calculadora 2.0")
+
+
+# while True:
+#     num_user = int(input("Quanto você quer sacar?: "))
+    
+#     if num_user > 0 and num_user % 10 == 0:
+#         saque = num_user
+            
+#         notas100 = saque // 100
+#         saque = saque % 100
+            
+#         notas50 = saque // 50
+#         saque = saque % 50
+            
+#         notas20 = saque // 20
+#         saque = saque % 20
+            
+#         notas10 = saque // 10
+#         saque = saque % 10
+#         print(f'Notas de 100: {notas100}\nNotas de 50: {notas50}\nNotas de 20: {notas20}\nNotas de 10: {notas10}')
+#         break     
+#     else:
+#         print("O número tem que ser positivo e multiplo de 10")
+    
+
+
+
+# lista = []
+# while True:
+#     escolha_user = input("O que voce deseja fazer\n [L] Listar [I] Inserir[A] Apagar [S] Sair?: ")
+#     if escolha_user == "L":
+#         for indice, nome in enumerate(lista, start=1):
+#             print(f'{indice} - {nome}')
+#     if escolha_user == "I":
+#         inserir = input("O que voce deseja inserir?: ")
+#         lista.append(inserir)
+#     elif escolha_user == "A":
+#         apagar = int(input("Qual indice você deseja apagar?: "))
+#         apagar = apagar - 1
+#         del lista[apagar]
+#     elif escolha_user == "S":
+#         print("saindo...")
+#         break
+
+
+inicial = float(input("Quanto voce deseja investir?: "))
+taxa = float(input("Qual a taxa?: "))
+meses = int(input("Em quantos meses?: "))
+
+taxa = (taxa / 100) + 1
+
+montante =  (taxa ** meses) * inicial
+
+print(f'{montante:.2f}')

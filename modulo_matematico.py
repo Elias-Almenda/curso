@@ -29,3 +29,10 @@ def raiz(numero: float, indice: int = 2) -> float:
     
     return numero ** (1 / indice)
     
+def juros_composto(i,t,m):
+    
+    t = (t / 100) + 1
+    
+    montante =  (t ** m) * i
+    
+    return montante
