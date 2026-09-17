@@ -12,7 +12,7 @@ def triplicar():
 def quadriplicar():
     return numero * 4
 
-duplicacao = duplicar()
+
 print(f'O resultado da duplicação é {duplicar()}')
 print(f'O resultado da triplicação é {triplicar()}')
 print(f'O resultado da quadriplicação é {quadriplicar()}')

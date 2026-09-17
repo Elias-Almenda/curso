@@ -315,12 +315,36 @@
 #         break
 
 
-inicial = float(input("Quanto voce deseja investir?: "))
-taxa = float(input("Qual a taxa?: "))
-meses = int(input("Em quantos meses?: "))
+# inicial = float(input("Quanto voce deseja investir?: "))
+# taxa = float(input("Qual a taxa?: "))
+# meses = int(input("Em quantos meses?: "))
 
-taxa = (taxa / 100) + 1
+# taxa = (taxa / 100) + 1
 
-montante =  (taxa ** meses) * inicial
+# montante =  (taxa ** meses) * inicial
 
-print(f'{montante:.2f}')
+# print(f'{montante:.2f}')
+
+
+
+notas = [7.5, 8.0 , 6.5 , 9.0 , 5.5]
+
+def analisar_notas(notas):
+    maior_nota = 0
+    menor_nota = min(notas)
+    iguais_a_sete = 0
+    soma = 0
+    for nota in notas:
+        soma += nota
+        if nota > maior_nota:
+            maior_nota = nota
+        if nota >= 7:
+            iguais_a_sete += 1
+    media = soma / len(notas)
+    return maior_nota,menor_nota, iguais_a_sete, media
+
+nota_maior, nota_menor, aprovado,media = analisar_notas(notas)
+
+print(f'Maior note: {nota_maior}\nMenor nota: {nota_menor}\nAprovados: {aprovado}\nMedia: {media}')
+
+
